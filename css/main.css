@@ -74,3 +74,12 @@ Header Styles
         width: 100%;
     }
 }
+
+/* Style footer */
+.footer {
+
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+
+}
