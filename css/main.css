@@ -1,6 +1,10 @@
 /* 
 Header Styles
 */
+/* Ensure proper sizing */
+*{
+    box-sizing: border-box;
+}
 
 .header {
     padding: 80px;
@@ -31,9 +35,42 @@ Header Styles
 /* Right Aligned Link */
 .navbar a.right{
     float: right;
+
 }
 /* Change color on hover/mouse-over */
 .navbar a:hover{
     background-color: #ddd;
     color: black;
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Create two unequal colums that sits next to each other */
+.side {
+    flex: 30%; /* Set the width of the sidebar*/
+    background-color: #f1f1f1; /* Grey Background*/
+    padding: 20px;
+}
+/* Main Column */
+.main {
+    flex: 70%; /* Set the width of the main content*/
+    background-color: white;
+    padding: 20px;
+}
+
+/* Responsive layaout : When the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px){
+    .row{
+        -ms-flex-direction: column;
+    }
+}
+/* Responsive layout : when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px){
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
 }
