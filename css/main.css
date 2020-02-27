@@ -5,13 +5,18 @@ Header Styles
 *{
     box-sizing: border-box;
 }
-
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+/* Header Logo Title*/
 .header {
     padding: 80px;
     text-align: center;
     background-color: #1abc9c;
     color: white;
 }
+
 /*  increse the font size of the <h1> element */
 .header h1 {
     font-size: 40px;
@@ -43,28 +48,39 @@ Header Styles
     color: black;
 }
 
+
 /* Column container */
 .row {
+    display: -ms-flexbox; /* IE10*/
     display: flex;
+    -ms-flex-wrap: wrap; /* IE10*/
     flex-wrap: wrap;
 }
 /* Create two unequal colums that sits next to each other */
 .side {
+    -ms-flex: 30%;
     flex: 30%; /* Set the width of the sidebar*/
     background-color: #f1f1f1; /* Grey Background*/
     padding: 20px;
 }
 /* Main Column */
 .main {
+    -ms-flex: 70%;
     flex: 70%; /* Set the width of the main content*/
     background-color: white;
     padding: 20px;
 }
-
+/* Fake image, Just for this Example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
 /* Responsive layaout : When the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px){
     .row{
         -ms-flex-direction: column;
+        flex-direction: column;
     }
 }
 /* Responsive layout : when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
