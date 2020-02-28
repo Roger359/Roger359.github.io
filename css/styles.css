@@ -75,8 +75,9 @@ rgba(142, 187, 54, 0.8)  |  8dbb35
 
   /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
   .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
+    width: 100%;
+    background-color: white;
+    
   }
   
   /* Change the background color on mouse-over */
