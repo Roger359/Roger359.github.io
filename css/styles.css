@@ -55,7 +55,7 @@ rgba(142, 187, 54, 0.8)  |  8dbb35
     overflow: hidden;
     background-color: white;
     padding: 20px 10px;
-    box-shadow: var(--boxshadow)
+    box-shadow: 0 5px 8px -6px rgba(0,0,0,.8);
   }
   
   /* Style the header links */
