@@ -5,6 +5,7 @@ author: Roger Acosta
 Febrero 28, 2020
 
 */
+
 /* Colores de cpven
 
 - Colores en la pagina WEB de cpven 
@@ -86,7 +87,7 @@ rgba(142, 187, 54, 0.8)  |  8dbb35
   
   /* Style the active/current link*/
   .header a.active {
-    background-color: var(--colorverde)
+    background-color: var(--colorverde);
     color: white;
   }
   
