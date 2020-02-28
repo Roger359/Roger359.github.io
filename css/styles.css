@@ -42,7 +42,7 @@ rgba(142, 187, 54, 0.8)  |  8dbb35
     --colorverdetiles: rgba(142, 187, 54, 0.8); 
     --coloramarillo: #efcc00;
     --colorgris:#f4f4f4;
-    --boxshadow: 0 5px 8px -6px rgba(0,0,0,.8);
+    --boxshadow: 0 5px 8px -6px rgba(0,0,0,.4);
 }
 
 
