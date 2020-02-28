@@ -3,46 +3,16 @@
 CPVEN Portal Web
 author: Roger Acosta
 Febrero 28, 2020
-
 */
 
-/* Colores de cpven
 
-- Colores en la pagina WEB de cpven 
-
-Amarillo : #ffd100 rgb(255,209,0)
-Verde : #388B22 rgb(56,139,34)
-
-- Colores del Logo de Cpven en la pagina WEB 
-
-Verde : #50b748 rgb(80,182,72)
-Amarillo: #ffde00 rgb(255,222,0)
-
-- Colores del Manual de Identidad Entregado a mi en el año 2016
-
-Amarillo : rgb(239,204,0); #efcc00
-Verde : rgb(142,187,54); #8ebb36
-
-- Verde los iconos entregados por el diseñador:
-
-rgba(142, 187, 54, 0.8)  |  8dbb35
-
- - Colores del icono de GTH
-
- Verde : #74bc1f
-
- - Colores del Icono Informatica
-
- Verde : #77bd1e
-
-*/
 /* Variables */
 :root {
     --colorverde:#8dbb35; 
     --colorverdetiles: rgba(142, 187, 54, 0.8); 
     --coloramarillo: #efcc00;
     --colorgris:#f4f4f4;
-    --boxshadow: 0 5px 8px -6px rgba(0,0,0,.8);
+    --boxshadow: 0 5px 8px -6px rgba(0,0,0,.4);
 }
 
 *{
@@ -55,7 +25,7 @@ rgba(142, 187, 54, 0.8)  |  8dbb35
     overflow: hidden;
     background-color: white;
     padding: 20px 10px;
-    box-shadow: 0 5px 8px -6px rgba(0,0,0,.8);
+    box-shadow: var(--boxshadow);
   }
   
   /* Style the header links */
@@ -75,22 +45,17 @@ rgba(142, 187, 54, 0.8)  |  8dbb35
     background-color: white;
     
   }
-  
+ 
   /* Change the background color on mouse-over */
   .header a:hover {
     background-color: var(--coloramarillo);
     color: black;
   }
   
-  /* Style the active/current link*/
-  .header a.active {
-    background-color: var(--colorverde);
-    color: white;
-  }
-  
   /* Float the link section to the right */
   .header-right {
     float: right;
+    margin-right: 20px;
   }
 
   /* Column container */
@@ -99,13 +64,66 @@ rgba(142, 187, 54, 0.8)  |  8dbb35
   display: flex;
   -ms-flex-wrap: wrap; /* IE10*/
   flex-wrap: wrap;
+  margin-top: 10px;
 }
-/* Create two unequal colums that sits next to each other */
-.side {
-  -ms-flex: 20%;
-  flex: 20%; /* Set the width of the sidebar*/
-  background-color: #f1f1f1; /* Grey Background*/
+
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
   padding: 20px;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: var(--colorverde);
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: var(--coloramarillo);
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }
 /* Main Column */
 .main {
@@ -124,5 +142,6 @@ rgba(142, 187, 54, 0.8)  |  8dbb35
     }
     .header-right {
       float: none;
+      display: none;
     }
   }
