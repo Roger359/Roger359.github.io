@@ -96,6 +96,28 @@ rgba(142, 187, 54, 0.8)  |  8dbb35
     float: right;
   }
   
+  /* Column container */
+.row {
+  display: -ms-flexbox; /* IE10*/
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10*/
+  flex-wrap: wrap;
+}
+/* Create two unequal colums that sits next to each other */
+.side {
+  -ms-flex: 30%;
+  flex: 30%; /* Set the width of the sidebar*/
+  background-color: #f1f1f1; /* Grey Background*/
+  padding: 20px;
+}
+/* Main Column */
+.main {
+  -ms-flex: 70%;
+  flex: 70%; /* Set the width of the main content*/
+  background-color: white;
+  padding: 20px;
+}
+  
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
   @media screen and (max-width: 500px) {
     .header a {
