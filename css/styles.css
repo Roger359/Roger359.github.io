@@ -42,16 +42,13 @@ rgba(142, 187, 54, 0.8)  |  8dbb35
     --colorverdetiles: rgba(142, 187, 54, 0.8); 
     --coloramarillo: #efcc00;
     --colorgris:#f4f4f4;
-    --boxshadow: 0 5px 8px -6px rgba(0,0,0,.4);
+    --boxshadow: 0 5px 8px -6px rgba(0,0,0,.8);
 }
-
 
 *{
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-
 
 /* Style the header with a grey background and some padding */
 .header {
@@ -95,7 +92,7 @@ rgba(142, 187, 54, 0.8)  |  8dbb35
   .header-right {
     float: right;
   }
-  
+
   /* Column container */
 .row {
   display: -ms-flexbox; /* IE10*/
@@ -105,15 +102,15 @@ rgba(142, 187, 54, 0.8)  |  8dbb35
 }
 /* Create two unequal colums that sits next to each other */
 .side {
-  -ms-flex: 30%;
-  flex: 30%; /* Set the width of the sidebar*/
+  -ms-flex: 20%;
+  flex: 20%; /* Set the width of the sidebar*/
   background-color: #f1f1f1; /* Grey Background*/
   padding: 20px;
 }
 /* Main Column */
 .main {
-  -ms-flex: 70%;
-  flex: 70%; /* Set the width of the main content*/
+  -ms-flex: 80%;
+  flex: 80%; /* Set the width of the main content*/
   background-color: white;
   padding: 20px;
 }
