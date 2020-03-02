@@ -74,9 +74,12 @@ Febrero 28, 2020
   padding: 0;
   width: 200px;
   background-color: #eee;
-  position: fixed;
+  /* position: fixed; */
   height: 100%;
   overflow: auto;
+  
+
+ 
 }
 
 /* Sidebar links */
@@ -98,6 +101,7 @@ Febrero 28, 2020
   background-color: var(--coloramarillo);
   color: white;
 }
+
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
@@ -128,7 +132,7 @@ div.content {
 .main {
   -ms-flex: 80%;
   flex: 80%; /* Set the width of the main content*/
-  background-color: white;
+  background-color: var(--coloramarillo);
   padding: 20px;
 }
   
@@ -144,3 +148,13 @@ div.content {
       display: none;
     }
   }
+
+  /* Style footer */
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #eee;
+    color: black;
+    text-align: center; }
