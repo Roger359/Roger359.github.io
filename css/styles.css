@@ -64,9 +64,8 @@ Febrero 28, 2020
   display: flex;
   -ms-flex-wrap: wrap; /* IE10*/
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin: 10px;
 }
-
 
 /* The side navigation menu */
 .sidebar {
@@ -74,12 +73,8 @@ Febrero 28, 2020
   padding: 0;
   width: 200px;
   background-color: #eee;
-  /* position: fixed; */
-  height: 100%;
+  /* height: 100%; */
   overflow: auto;
-  
-
- 
 }
 
 /* Sidebar links */
@@ -101,14 +96,120 @@ Febrero 28, 2020
   background-color: var(--coloramarillo);
   color: white;
 }
+/* Main Column */
+.main {
+  -ms-flex: 50%; 
+   flex: 50%;  /*Set the width of the main content */
+  background-color: white;
+  padding: 0 20px 0 0;
+}
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.aside{
+  -ms-flex: 20%;
+  flex: 20%;
+  
+  float: right;
+}
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
 }
+
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
@@ -119,6 +220,10 @@ div.content {
   }
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
+
+  .aside{
+    display: none;
+  }
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -128,13 +233,8 @@ div.content {
     float: none;
   }
 }
-/* Main Column */
-.main {
-  -ms-flex: 80%;
-  flex: 80%; /* Set the width of the main content*/
-  background-color: var(--coloramarillo);
-  padding: 20px;
-}
+
+
   
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
   @media screen and (max-width: 500px) {
