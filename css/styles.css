@@ -16,8 +16,9 @@ Febrero 28, 2020
 }
 
 *{
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
 }
 
 /* Style the header with a grey background and some padding */
@@ -81,7 +82,7 @@ Febrero 28, 2020
 .sidebar a {
   display: block;
   color: black;
-  padding: 16px;
+  padding: 11px;
   text-decoration: none;
 }
 
@@ -199,17 +200,10 @@ Febrero 28, 2020
 }
 
 .aside{
-  /* -ms-flex: 20%;
-  flex: 20%; */
-  
+  font-size: .8em;
   float: right;
 }
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-/* div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-} */
+
 #calendar{
   margin-left: auto;
   margin-right: auto;
@@ -262,7 +256,7 @@ Febrero 28, 2020
   width: 100%;
   height: 37px;
   text-align: center;
-  padding: 18px 0;
+  padding: 2px 0;
   /* -webkit-border-radius: 12px 12px 0px 0px;
   -moz-border-radius: 12px 12px 0px 0px; 
   border-radius: 12px 12px 0px 0px; */
@@ -272,7 +266,7 @@ Febrero 28, 2020
   color: #FFFFFF;
   float:left;
   width:70%;
-  margin-top: 7px;
+  margin-top: 10px;
 }
 i[class^=icon-chevron]{
   color: #fff;
