@@ -16,7 +16,7 @@ Febrero 28, 2020
 }
 
 *{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
 }
@@ -199,6 +199,28 @@ Febrero 28, 2020
   to {opacity: 1}
 }
 
+/* Menu Gallery */
+.menu{
+  margin-top: 10px;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  
+  padding: 5px;
+  box-shadow: var(--boxshadow);
+}
+
+
+/* Clear floats after image containers */
+.menugallery::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+
+
 .aside{
   font-size: .8em;
   float: right;
@@ -266,7 +288,7 @@ Febrero 28, 2020
   color: #FFFFFF;
   float:left;
   width:70%;
-  margin-top: 10px;
+  /* margin-top: 7px; */
 }
 i[class^=icon-chevron]{
   color: #fff;
