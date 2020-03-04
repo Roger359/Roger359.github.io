@@ -70,7 +70,6 @@
                                 <span class="dot" onclick="currentSlide(2)"></span>
                                 <span class="dot" onclick="currentSlide(3)"></span>
                             </div>
-
                             
                         <!-- Galeria de Menus -->
 
@@ -78,10 +77,10 @@
                                 
                                 <div class="menugallery">
                                     <div class="column">
-                                      <img class="item" src="../images/vision.gif" alt="vision"">
+                                      <a href="https://cpvenoffice365.sharepoint.com/SitePages/Vision.aspx"><img  id="myImg" class="item" src="../images/vision.gif" alt="vision""></a>
                                     </div>
                                     <div class="column">
-                                      <img class="item" src="../images/mision.gif" alt="Forest">
+                                      <img  class="item" src="../images/mision.gif" alt="Forest">
                                     </div>
                                     <div class="column">
                                       <img class="item" src="../images/valores.gif" alt="Mountains" >
@@ -93,6 +92,19 @@
                                         <img  class="item" src="../images/servicios.gif" alt="">
                                     </div>
                                   </div>
+                          
+                                  <!-- The Modal -->
+                                    <div id="myModal" class="modal">
+
+                                        <!-- The Close Button -->
+                                        <span class="close">&times;</span>
+                                    
+                                        <!-- Modal Content (The Image) -->
+                                        <img class="modal-content" id="img01">
+                                    
+                                        <!-- Modal Caption (Image Text) -->
+                                        <!-- <div id="caption"></div> -->
+                                    </div>
         
                             </section>
 
@@ -123,6 +135,6 @@
 <script src="../js/scripts.js"></script>
 <script src="../js/jquery.min.js"></script>
 <script src="../js/index.js"></script>
-
+<script src="../js/modal.js"></script>
 </body>
 </html>
