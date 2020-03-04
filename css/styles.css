@@ -16,7 +16,7 @@ Febrero 28, 2020
 }
 
 *{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -177,7 +177,7 @@ Febrero 28, 2020
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: var(--coloramarillo);
 }
 
 /* Fading animation */
@@ -199,9 +199,9 @@ Febrero 28, 2020
 }
 
 .aside{
-  -ms-flex: 20%;
-  flex: 20%;
-  border: 2px solid red;
+  /* -ms-flex: 20%;
+  flex: 20%; */
+  
   float: right;
 }
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
@@ -210,7 +210,76 @@ Febrero 28, 2020
   padding: 1px 16px;
   height: 1000px;
 } */
+#calendar{
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+}
+#calendar_weekdays div{
+  display:inline-block;
+  vertical-align:top;
+}
+#calendar_content, #calendar_weekdays, #calendar_header{
+  position: relative;
+  width: 320px;
+  overflow: hidden;
+  float: left;
+  z-index: 10;
+}
+#calendar_weekdays div, #calendar_content div{
+  width:40px;
+  height: 40px;
+  overflow: hidden;
+  text-align: center;
+  /* background-color: #FFFFFF; */
+  color: #333;
+}
+/* #calendar_content{
+  -webkit-border-radius: 0px 0px 12px 12px;
+  -moz-border-radius: 0px 0px 12px 12px; 
+  border-radius: 0px 0px 12px 12px;
+} */
+#calendar_content div{
+  float: left;
+}
+#calendar_content div:hover{
+  background-color: var(--coloramarillo);
+}
+#calendar_content div.blank{
+  background-color: #E8E8E8;
+}
+#calendar_header, #calendar_content div.today{
+  zoom: 1;
+  filter: alpha(opacity=70);
+  /* opacity: 0.7; */
+}
+/* #calendar_content div.today{
+  color: #FFFFFF;
+} */
+#calendar_header{
+  width: 100%;
+  height: 37px;
+  text-align: center;
+  padding: 18px 0;
+  /* -webkit-border-radius: 12px 12px 0px 0px;
+  -moz-border-radius: 12px 12px 0px 0px; 
+  border-radius: 12px 12px 0px 0px; */
+}
+#calendar_header h1{
+  font-size: 1.2em;
+  color: #FFFFFF;
+  float:left;
+  width:70%;
+  margin-top: 7px;
+}
+i[class^=icon-chevron]{
+  color: #fff;
+  float: left;
+  width:15%;
+  border-radius: 50%;
+}
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
@@ -230,7 +299,34 @@ Febrero 28, 2020
     display: none;
   }
 }
+@media screen and (max-width: 990px){
 
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+
+  
+  .slideshow-container {
+    margin-top: 5px;
+
+  }
+  .aside{
+    display: none;
+  }
+}
+@media screen and (min-width: 991px){
+
+  .row {
+    max-width: 1175px;
+    margin: 5px auto;
+  }
+
+
+}
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
   .sidebar a {
@@ -247,7 +343,7 @@ Febrero 28, 2020
   }
 }
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-  @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .header a {
       float: none;
       display: block;
@@ -258,6 +354,7 @@ Febrero 28, 2020
       display: none;
     }
   }
+ 
 
   /* Style footer */
   .footer {
@@ -269,3 +366,16 @@ Febrero 28, 2020
     
     color: black;
     text-align: center; }
+
+  .amarillo {
+    background-color: var(--coloramarillo);
+    height: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  .verde{
+    background-color: var(--colorverde);
+    height: 20px;
+    margin: 0;
+    padding: 0;
+  }
