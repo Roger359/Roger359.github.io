@@ -11,7 +11,7 @@ Febrero 28, 2020
     --colorverde:#8dbb35; 
     --colorverdetiles: rgba(142, 187, 54, 0.8); 
     --coloramarillo: #efcc00;
-    --colorgris:#f4f4f4;
+    --colorgris:	#f2f2f2;
     --boxshadow: 0 5px 8px -6px rgba(0,0,0,.4);
 }
 
@@ -19,6 +19,7 @@ Febrero 28, 2020
     /* box-sizing: border-box; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
+    
 }
 
 /* Style the header with a grey background and some padding */
@@ -73,7 +74,7 @@ Febrero 28, 2020
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #eee;
+  background-color:var(--colorgris);
   /* height: 100%; */
   overflow: auto;
 }
@@ -89,13 +90,13 @@ Febrero 28, 2020
 /* Active/current link */
 .sidebar a.active {
   background-color: var(--colorverde);
-  color: #333;
+  color: black;
 }
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
   background-color: var(--coloramarillo);
-  color: #333;
+  color: black;
 }
 /* Main Column */
 .main {
@@ -147,7 +148,7 @@ Febrero 28, 2020
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: var(--colorgris);
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -171,7 +172,7 @@ Febrero 28, 2020
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: var(--colorgris);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -230,7 +231,7 @@ Febrero 28, 2020
 #myImg:hover {opacity: 0.7;}
 
 .aside{
-  font-size: .8em;
+  /* font-size: .8em; */
   float: right;
 }
 
@@ -258,7 +259,7 @@ Febrero 28, 2020
   overflow: hidden;
   text-align: center;
   /* background-color: #FFFFFF; */
-  color: #333;
+  color: black;
 }
 /* #calendar_content{
   -webkit-border-radius: 0px 0px 12px 12px;
@@ -272,7 +273,7 @@ Febrero 28, 2020
   background-color: var(--coloramarillo);
 }
 #calendar_content div.blank{
-  background-color: #E8E8E8;
+  background-color: var(--colorgris);
 }
 #calendar_header, #calendar_content div.today{
   zoom: 1;
@@ -446,13 +447,12 @@ i[class^=icon-chevron]{
 
   .button {
     display: inline-block;
-    border-radius: 4px;
     background-color: var(--coloramarillo);
     border: none;
     color: #FFFFFF;
     text-align: center;
     font-size: 15px;
-    padding: 10px;
+    padding: 10px 0;
     width: 100%;
     transition: all 0.5s;
     cursor: pointer;
