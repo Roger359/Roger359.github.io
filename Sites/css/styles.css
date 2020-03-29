@@ -1,0 +1,50 @@
+
+
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: .5rem 3.75rem;
+    background-color: #ff8000;
+
+}
+.flex-container li {
+    display: inline-block;
+}
+.flex-container a {
+    display: block;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+h1.titles{
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+.sections{
+    
+    /* left: 10px; */
+    border: 1px solid black;
+    padding: 15px;
+    /* max-width: 80%; */
+    position: relative;
+    border-color: #ff8000;
+    border-width: 5px;
+    font-size: 18px;
+    margin: 20px
+}
+.footer{
+    padding: 60px 0px;
+    background-color: #000;
+    color: #fff;
+}
