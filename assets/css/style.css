@@ -1,9 +1,3 @@
-/**
-* Template Name: iPortfolio - v1.1.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -12,9 +6,13 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
 }
+:root{
+  --colorverde:#1abc9c;
+}
 
 a {
-  color: #149ddd;
+  /* color: #149ddd; */
+  color:var(--colorverde)
 }
 
 a:hover {
@@ -37,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #149ddd;
+  background: var(--colorverde);
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
