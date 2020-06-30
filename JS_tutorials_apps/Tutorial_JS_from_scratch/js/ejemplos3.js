@@ -3,16 +3,16 @@
  * ${} polarizar
  */
 
-//  function saludar(persona,sexo){
-//     let saludo = sexo === 'm'
-//                 ? 'Bienvenido'
-//                 : 'Bienvenida' 
-//     return `${saludo} a EDteam, ${persona}`
+ function saludar(persona,sexo){
+    let saludo = sexo === 'm'
+                ? 'Bienvenido'
+                : 'Bienvenida' 
+    return `${saludo} a EDteam, ${persona}`
 
-//     //  return sexo === 'm'
-//     //          ? `Bienvenidos a EDteam ${persona}`
-//     //          : `Bienvenida a EDteam ${persona}`
-//  }  
+    //  return sexo === 'm'
+    //          ? `Bienvenidos a EDteam ${persona}`
+    //          : `Bienvenida a EDteam ${persona}`
+ }  
 
 //  console.log(saludar('Roger', 'm'))
 //  console.log(saludar('Miguel', 'm'))
@@ -23,15 +23,15 @@
  * Funciones de Flechas
  */
 
-//  const saludar = (persona, sexo) => {
-//      let saludo = sexo === 'm'
-//                 ? 'Bienvenido'
-//                 : 'Bienvenida'
-//     return `${saludo} a EDteam, ${persona}`
-//  }
-//  console.log(saludar('Maria', 'f'))
-//  console.log(saludar('Roger', 'm'))
-//  console.log(saludar('Miguel', 'm'))
+ const saludar = (persona, sexo) => {
+     let saludo = sexo === 'm'
+                ? 'Bienvenido'
+                : 'Bienvenida'
+    return `${saludo} a EDteam, ${persona}`
+ }
+ console.log(saludar('Maria', 'f'))
+ console.log(saludar('Roger', 'm'))
+ console.log(saludar('Miguel', 'm'))
 
 /**
  * EJemplo de suma con nomenclatura fleca
