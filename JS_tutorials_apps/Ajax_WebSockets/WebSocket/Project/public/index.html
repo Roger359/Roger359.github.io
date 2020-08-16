@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSocket</title>
+  <style>
+    canvas{
+      width: 800px !important;
+      height: 600px !important;
+    }
+  </style>
+</head>
+<body>
+    <div id="systemMessage"></div>
+
+    <label for="usrName">Usuario</label>
+    <input type="text" name="usrName" id="usrName">
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+    <button id="btnLogin">Login</button>
+
+    <label for="txtmsg">Mensaje</label>
+    <input type="text" name="txtmsg" id="txtmsg">
+    <button id="btnSendMessage">Enviar</button>
+
+    <label for="product">Producto</label>
+    <select name="product" id="product">
+      <option value="0">Zapatos</option>
+      <option value="1">Camisas</option>
+      <option value="2">Billeteras</option>
+    </select>
+    <label for="quantity">Cantidad</label>
+    <input type="number" name="quantity" id="quantity">
+    <button id="btnSale">Vender</button>
+
+    <div id="myContent"></div>
+    <canvas id="myChart" width="400" height="400"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

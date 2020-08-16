@@ -1,4 +1,4 @@
- // const Handlebars = require("handlebars");
+  // const Handlebars = require("handlebars");
 
 const source = document.getElementById('greet').innerHTML;
 
