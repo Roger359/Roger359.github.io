@@ -81,11 +81,13 @@ a{
 .brand {
   text-align: center;
   padding-bottom: 1rem;
-  border-bottom: 1px dotted var(--gry);     
+  border-bottom: 1px dotted var(--gry);   
+  background: white;  
 }
 
 .brand img {
-  max-width: 120px;
+  max-width: 160px;
+  margin: 10px auto;
 }
 
 .main-container {
@@ -171,7 +173,7 @@ Login page
   padding: 3rem;
   border: 1px solid var(--gry);
   border-radius: 1rem;
-  background: var(--blck);
+  background: var(--wht);
 }
 
 .brand-login {

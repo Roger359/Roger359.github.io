@@ -98,7 +98,7 @@ Router.add(/login/, function(){
     document.body.innerHTML = `
     <div class="login-container">
         <div class="brand-login">
-            <img src="https://app.ed.team/static/media/logo-alt.fd226574.svg" alt="" class="logo">
+            <img src="image/logo.gif" alt="" class="logo">
         </div>
         <form class="form-login" id="form-login">
             <input type="text" class="form-login--user" placeholder="Usuario" name="userName">
@@ -119,7 +119,7 @@ Router.add(/login/, function(){
     document.body.innerHTML = `
     <div class="login-container">
         <div class="brand-login">
-            <img src="https://app.ed.team/static/media/logo-alt.fd226574.svg" alt="" class="logo">
+            <img src="image/logo.gif" alt="" class="logo">
         </div>
         <form class="form-login" id="form-registro">
             <input type="text" class="form-login--user" placeholder="Usuario" name="userName">
@@ -135,7 +135,7 @@ Router.add(/login/, function(){
     document.body.innerHTML = `
     <aside class="sidebar-container">
         <div class="brand">
-            <img src="https://app.ed.team/static/media/logo-alt.fd226574.svg" alt="Logo EDteam" class="logo">
+            <img src="image/logo.gif" alt="Logo EDteam" class="logo">
         </div>
         <div class="users" id="usersConnected">
             <h2>Usuarios contectados</h2>
@@ -191,12 +191,10 @@ const wsInit = () => {
     }
 }
 
-
-
-
 if (localStorage.getItem('token') === "ESTEESUNTOKENMUYSEGUROQUENADIEPUEDEVIOLENTAR:)" ) {
     wsInit()
     Router.navigate('/chat')
 } else {
     Router.navigate('/login')
 }
+

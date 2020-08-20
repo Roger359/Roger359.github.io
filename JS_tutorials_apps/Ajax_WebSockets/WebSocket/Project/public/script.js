@@ -70,8 +70,10 @@ const connectWS = data => {
     }
   }
   setInterval(() => {
-    webSocket.send(JSON.stringify({type: 'ping'}))
-  },60000)
+    webSocket.send(JSON.stringify({
+      type: 'ping'
+    }))
+  }, 60000)
 }
 
 btnSendMessage.addEventListener('click', e => {
